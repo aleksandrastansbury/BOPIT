@@ -17,7 +17,7 @@ void stepperCW(int steps)
     for (int i = 0; i < steps; i++) // for each step, set the step pin high so the motor spins and then low to stop
     {
         digitalWrite(STEP_PIN, HIGH);
-        delayMicroseconds(1000);
+        delayMicroseconds(1000); // to make the code faster or slower, change the values here from 500 to 1000 or vice versa
         digitalWrite(STEP_PIN, LOW);
         delayMicroseconds(1000);
     }
@@ -30,7 +30,7 @@ void stepperCCW(int steps)
     for (int i = 0; i < steps; i++)
     {
         digitalWrite(STEP_PIN, HIGH); // for each step, set the step pin high so the motor spins and then low to stop
-        delayMicroseconds(1000);
+        delayMicroseconds(1000);      // to make the code faster or slower, change the values here from 500 to 1000 or vice versa
         digitalWrite(STEP_PIN, LOW);
         delayMicroseconds(1000);
     }
