@@ -1,13 +1,16 @@
 #include <Arduino.h>
 #include "stepper.h"
+#include "solenoid.h"
 
 void setup()
 {
-    stepperInit();
+    // stepperInit();
+    solenoidInit();
 }
 
 void loop()
 {
-    stepperCCW(200);
-    delay(1000);
+    // stepperCCW(200);
+    solenoid();
+    delay(500);
 }
