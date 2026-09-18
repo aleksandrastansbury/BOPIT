@@ -9,8 +9,11 @@ void solenoidInit()
 }
 void solenoid()
 {
-    digitalWrite(SOLENOID_PIN, HIGH);
-    delay(400);
-    digitalWrite(SOLENOID_PIN, LOW);
-    delay(400);
+    for (int i = 0; i < 3; i++)
+    {
+        digitalWrite(SOLENOID_PIN, HIGH);
+        delay(400);
+        digitalWrite(SOLENOID_PIN, LOW);
+        delay(400);
+    }
 }
